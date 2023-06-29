@@ -9,7 +9,7 @@ namespace HashtableGame
         public static void Main()
         {
             Debug.WriteLine("Hello from nanoFramework hashtables!");
-            var game = new HashtableGame(88);
+            var game = new HashtableGame(12);
             while(true)
             {
                 try
