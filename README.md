@@ -7,8 +7,8 @@ Method in
 > https://github.com/nanoframework/nf-interpreter/blob/main/src/nanoFramework.System.Collections/nf_system_collections_System_Collections_Hashtable.cpp
 
 it faults at line:
-  key = stack.Arg1().Dereference();
-  FAULT_ON_NULL_ARG(key);
+    key = stack.Arg1().Dereference();
+    FAULT_ON_NULL_ARG(key);
 
 what suggest that it can't read properly value from the stack. It's a value type (may be wrapped in object) and when logging it from C# code it clearly isn't null.
 
